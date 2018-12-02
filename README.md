@@ -2,11 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Setup
 
-### `npm install`
+### `yarn`
 
 ## Available Scripts
 
 To start the app
 
-### `npm start`
+### `yarn run start`
 
