@@ -38,10 +38,10 @@ class App extends Component {
   }
 
   showme(type) {
-    if (type !== this.state.type && this.state.theCity.length > 0) {
+    if (type !== this.state.theCity[1] && this.state.theCity.length > 0) {
       this.setState({theCity:[this.state.theCity[0],type],thePlaces:[]});
     }
-    else {
+    if (this.state.theCity.length === 0) {
       alert('Choose a city first.');
     }
   }
