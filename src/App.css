@@ -1,5 +1,11 @@
+body {width:100%; height:100%; overflow-y: scroll;}
+html {width:100%; height:100%; overflow: hidden;}
+
 .App {
   text-align: center;
+  padding: 0px;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
 }
 
 .App-logo {
@@ -9,13 +15,30 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 40vh;
   color: white;
+}
+
+.App-welcome {
+  align-self: center;
+  text-align: right;
+  color: coral;
+  font-size: 4vw;
+}
+
+.App-description {
+  text-align: left;
+  align-self: center;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.App-cities {
+  justify-content: center;
+  font-size: 2vw;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 .App-link {
@@ -28,5 +51,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .App-welcome {
+    align-self: flex-end;
+    text-align: center;
+    font-size: 2em;
+  }
+  .App-description {
+    align-self: flex-start;
+    text-align: center;
+    font-size: 1em;
+  }
+  .App-cities {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 414px) {
+  .App-cities {
+    font-size: 1.2em;
+    margin-left: 4px;
   }
 }
