@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
 
 const place2googleType = {
-  'Amusement Park' : 'amusement_park',
+  'Tourist Attractions' : 'amusement_park',
   'Hotels' : 'hotels',
   'Restaurants' : 'cafe'
 }
 
 const googleType2place = {
-  'amusement_park' : 'Amusement Park',
+  'amusement_park' : 'Tourist Attractions',
   'hotels' : 'Hotels',
   'cafe' : 'Restaurants'
 }
@@ -52,7 +52,7 @@ class Showme extends Component {
           {googleType2place[this.props.type]}
         </DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem onClick={this.select}>Amusement Park</DropdownItem>
+          <DropdownItem onClick={this.select}>Tourist Attractions</DropdownItem>
           <DropdownItem divider />
           <DropdownItem onClick={this.select}>Hotels</DropdownItem>
           <DropdownItem divider />

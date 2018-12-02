@@ -44,6 +44,14 @@ class Cities extends Component {
           <DropdownItem onClick={this.select}>Ubud,Bali</DropdownItem>
           <DropdownItem divider />
           <DropdownItem onClick={this.select}>Kuala Lumpur</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem onClick={this.select}>Penang</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem onClick={this.select}>Bangkok</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem onClick={this.select}>Chiang Mai</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem onClick={this.select}>Siem Reap</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     );

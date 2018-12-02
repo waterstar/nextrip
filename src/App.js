@@ -18,7 +18,7 @@ class App extends Component {
     this.state = {
       dropdownOpen: false,
       nextCity:'cities',
-      theCity:[],
+      theCity:[null, null],
       thePlaces:[],
       type:'amusement_park'
     };
@@ -38,10 +38,10 @@ class App extends Component {
   }
 
   showme(type) {
-    if (type !== this.state.theCity[1] && this.state.theCity.length > 0) {
+    if (type !== this.state.theCity[1] && this.state.theCity[0] !== null) {
       this.setState({theCity:[this.state.theCity[0],type],thePlaces:[]});
     }
-    if (this.state.theCity.length === 0) {
+    if (this.state.theCity[0] === null) {
       alert('Choose a city first.');
     }
   }

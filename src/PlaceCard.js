@@ -14,7 +14,7 @@ const PlaceCard = (props) => {
           <CardTitle>{thePlace.name}</CardTitle>
           <CardSubtitle style={{fontSize:'0.6em'}}>{thePlace.vicinity}</CardSubtitle>
           <CardText>{thePlace.reviews && thePlace.reviews[0].text}</CardText>
-          <Button>Button</Button>
+          {/* <Button>Button</Button> */}
         </CardBody>
       </Card>
     </div>
