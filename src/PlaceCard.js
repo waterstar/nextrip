@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+  CardTitle, CardSubtitle } from 'reactstrap';
 
 const PlaceCard = (props) => {
   const child   = { width: `16em`}
